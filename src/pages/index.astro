@@ -1,0 +1,130 @@
+---
+
+---
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isaev Brand</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container {
+        @apply max-w-3xl mx-auto;
+      }
+      input:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- spacing -->
+    <div class="py-7"></div>
+
+    <!-- header -->
+    <div class="container p-5 space-y-1">
+      <div class="text-3xl">Isaev Brand</div>
+      <div class="text-neutral-500">
+        All about <a
+          href="https://isaev.ca/ru/driverslicence"
+          class="hover:underline text-primary">this page</a
+        > and how to improve its form.
+      </div>
+    </div>
+
+    <!-- colors -->
+    <div class="container p-5 space-y-5">
+      <div class="text-3xl">Colors</div>
+      <div class="flex gap-7 flex-wrap">
+        <div class="text-center space-y-2">
+          <div class="bg-primary size-14 rounded-lg"></div>
+          <div>
+            <div class="text-sm text-neutral-500">primary</div>
+            <div class="text-sm text-neutral-500">#374aa8</div>
+          </div>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="bg-text size-14 rounded-lg"></div>
+          <div>
+            <div class="text-sm text-neutral-500">text</div>
+            <div class="text-sm text-neutral-500">#161a38</div>
+          </div>
+        </div>
+        <div class="text-center space-y-2">
+          <div class="bg-white size-14 rounded-lg border"></div>
+          <div>
+            <div class="text-sm text-neutral-500">bg</div>
+            <div class="text-sm text-neutral-500">#ffffff</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form page -->
+    <div class="container p-5 space-y-3 text-text">
+      <div class="text-3xl">Form</div>
+      <!-- step 1 -->
+      <div class="border p-5 rounded-lg space-y-5">
+        <!-- header -->
+        <div class="space-y-2">
+          <div class="text-sm text-neutral-500">x of n</div>
+          <div class="grid grid-cols-5">
+            <div class="border border-primary"></div>
+            <div class="border col-span-4"></div>
+          </div>
+        </div>
+
+        <!-- questions -->
+        <div class="space-y-3">
+          <div class="text-xl font-semibold">section_title</div>
+          <div class="space-y-1">
+            <div class="text-sm text-neutral-500">field_hint</div>
+            <input
+              type="text"
+              placeholder="placeholder"
+              class="border px-3 py-1 rounded-lg w-full placeholder-neutral-400 focus:border-primary transition-colors"
+            />
+          </div>
+          <div class="space-y-1">
+            <div class="text-sm text-neutral-500">field_hint</div>
+            <input
+              type="text"
+              placeholder="placeholder"
+              class="border px-3 py-1 rounded-lg w-full placeholder-neutral-400 focus:border-primary transition-colors"
+            />
+          </div>
+          <div class="space-y-1">
+            <div class="text-sm text-neutral-500">field_hint</div>
+            <input
+              type="text"
+              placeholder="placeholder"
+              class="border px-3 py-1 rounded-lg w-full placeholder-neutral-400 focus:border-primary transition-colors"
+            />
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex justify-between">
+          <div
+            class="px-5 py-2 border border-primary text-primary rounded-lg lg:hover:opacity-95 active:scale-95 transition-all cursor-pointer"
+          >
+            prev_button
+          </div>
+          <div
+            class="px-5 py-2 bg-primary text-white rounded-lg lg:hover:opacity-95 active:scale-95 transition-all cursor-pointer"
+          >
+            next_button
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
