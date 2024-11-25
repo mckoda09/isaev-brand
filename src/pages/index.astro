@@ -1,5 +1,7 @@
 ---
-
+import First from "../components/steps/First.astro";
+import Second from "../components/steps/Second.astro";
+import Third from "../components/steps/Third.astro";
 ---
 
 <html lang="ru">
@@ -77,61 +79,10 @@
     <!-- form page -->
     <div class="container p-5 space-y-3">
       <div class="text-3xl">Form</div>
-      <!-- step 1 -->
-      <div class="border p-5 rounded-lg space-y-5 text-text">
-        <!-- header -->
-        <div class="space-y-2">
-          <div class="text-sm text-neutral-500">x of n</div>
-          <div class="grid grid-cols-5">
-            <div class="border border-primary"></div>
-            <div class="border col-span-4"></div>
-          </div>
-        </div>
 
-        <!-- questions -->
-        <div class="space-y-3">
-          <div class="text-xl font-semibold">section_title</div>
-          <div class="space-y-1">
-            <div class="text-sm text-neutral-500">field_hint</div>
-            <input
-              type="text"
-              placeholder="placeholder"
-              class="border px-3 py-1 rounded-lg w-full placeholder-neutral-400 focus:border-primary transition-colors"
-            />
-          </div>
-          <div class="space-y-1">
-            <div class="text-sm text-neutral-500">field_hint</div>
-            <div
-              class="border text-neutral-500 flex items-center justify-center flex-col gap-3 p-9 rounded-lg w-full"
-            >
-              <div>file_icon</div>
-              <div>file_hint</div>
-            </div>
-          </div>
-          <div class="space-y-1">
-            <div class="text-sm text-neutral-500">field_hint</div>
-            <input
-              type="text"
-              placeholder="placeholder"
-              class="border px-3 py-1 rounded-lg w-full placeholder-neutral-400 focus:border-primary transition-colors"
-            />
-          </div>
-        </div>
-
-        <!-- buttons -->
-        <div class="flex justify-between">
-          <div
-            class="px-5 py-2 border border-primary text-primary rounded-lg lg:hover:opacity-95 active:scale-95 transition-all cursor-pointer"
-          >
-            prev_button
-          </div>
-          <div
-            class="px-5 py-2 bg-primary text-white rounded-lg lg:hover:opacity-95 active:scale-95 transition-all cursor-pointer"
-          >
-            next_button
-          </div>
-        </div>
-      </div>
+      <First />
+      <Second />
+      <Third />
     </div>
   </body>
 </html>
